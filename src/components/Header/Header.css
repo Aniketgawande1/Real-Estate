@@ -1,0 +1,19 @@
+.h-wrapper {
+    background: var(--black);  /* Fixed variable syntax */
+    color: white;  /* Provided a valid color */
+}
+
+.h-container {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);  /* Fixed variable syntax */
+}
+
+.h-menu {
+    gap: 2rem;
+}
+
+.h-menu > *:hover {  /* Corrected the hover selector */
+    cursor: pointer;
+}
