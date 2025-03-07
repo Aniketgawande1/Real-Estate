@@ -1,19 +1,48 @@
 .h-wrapper {
-    background: var(--black);  /* Fixed variable syntax */
-    color: white;  /* Provided a valid color */
+    position: fixed; /* Keep the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--black);
+    color: white;
+    z-index: 1000; /* Ensure it stays above other elements */
+    padding: 1rem 2rem; /* Add padding for spacing */
 }
+
+
 
 .h-container {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: var(--secondary);  /* Fixed variable syntax */
+    color: var (--secondary);
+
+
 }
 
+
 .h-menu {
+    display: flex;
     gap: 2rem;
 }
 
-.h-menu > *:hover {  /* Corrected the hover selector */
+.h-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    background: var(--blue-gradient);
+    border: none;
+    color: white;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+body {
+    padding-top: 5rem; /* Adjust based on navbar height */
 }
